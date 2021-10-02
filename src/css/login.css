@@ -1,0 +1,229 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ebeef2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box1 {
+  width: 100vw;
+  height: 25vh;
+  background-color: #800680;
+  color: aliceblue;
+  text-align: center;
+  font-size: large;
+  font-weight: 650;
+  border-radius: 5px;
+}
+
+.box2 {
+  width: 80vw;
+  height: 60vh;
+  margin-top: 10px;
+  background-color: lightgray;
+  border-radius: 8px;
+  font-size: small;
+  text-align: center;
+  justify-content: center;
+}
+
+.user-icon {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+.username,
+.password {
+  margin-bottom: 20px;
+}
+
+.textbox-username,
+.textbox-password {
+  height: 29px;
+  width: 75%;
+  margin-bottom: 10px;
+  max-width: 263px;
+  border-radius: 5px;
+  border-style: none;
+  border-color: lightgray;
+  justify-items: center;
+}
+
+.button-login {
+  height: 2.5rem;
+  width: 80%;
+  max-width: 263px;
+  margin-top: 25px;
+  color: white;
+  background-color: rgb(150, 148, 148);
+  border-radius: 5px;
+  border-style: none;
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .box1 {
+    width: 60vw;
+    height: 20vh;
+    font-size: 2rem;
+  }
+
+  .box2 {
+    width: 40vw;
+    height: 60vh;
+    margin-top: 10px;
+    min-width: 560px;
+    /* min-height: px; */
+    font-size: medium;
+  }
+  .user-icon {
+    margin-top: 25px;
+    margin-bottom: 60px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .textbox-username,
+  .textbox-password {
+    height: 45px;
+    width: 90%;
+    max-width: 300px;
+    border-radius: 8px;
+    border-style: none;
+    border-color: lightgray;
+    justify-items: center;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: large;
+  }
+
+  .button-login {
+    height: 45px;
+    width: 90%;
+    max-width: 300px;
+    margin-top: 40px;
+    border-radius: 8px;
+    font-size: larger;
+    font-weight: bold;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+Slideshow container .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
