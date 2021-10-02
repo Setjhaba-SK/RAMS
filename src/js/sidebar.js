@@ -1,0 +1,27 @@
+//Sidebar
+let btn = document.querySelector("#btn");
+let sidebar = document.querySelector(".sidebar");
+let searchBtn = document.querySelector(".bx-search-alt-2");
+
+btn.onclick = function () {
+    sidebar.classList.toggle("active");
+};
+
+searchBtn.onclick = function () {
+    sidebar.classList.toggle("active");
+};
+
+//Tabs
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("links-name", "tooltip");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
