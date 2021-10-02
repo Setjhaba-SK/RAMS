@@ -1,3 +1,0 @@
-﻿01234567,Setjhaba Stonga,ctjhabast@gmail.com,0834226785,Male,BSc. in Information Technolgy,Mr,NSFAS,Kumba,Kumba,Single
-12345678,Mpho Mokeona,mphom123@gmail.com,0654026435,Male,BCom. in Chartered Accountancy,Miss,SAICA,Kumba,Thuthuka,Single
-23456789,Teboho Thapedi,tebza@gmail.com,0724296767,Male,B.ed,Mr,NSFAS,Kumba,Vergelegen,Single
