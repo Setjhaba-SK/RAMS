@@ -9,12 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/admin.css" />
     <script src="js/sidebar.js"></script>
-    <script src="js/sidebar.js"></script>
+    <script src="js/tabs.js"></script>
     <href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet"/>
     <title>Admin Panel</title>
 </head>
 <body>
-    <form id="formAdmin" runat="server">
+    <form id="formAdmin" runat="server" draggable="false">
         <div>
             <div class="sidebar">
       <div class="logo-content">
@@ -22,6 +22,7 @@
           <div class="logo-name">R.A.M.S</div>
         </div>
         <i class="bx bx-menu" id="btn"></i>
+
       </div>
       <ul class="nav-list">
         <li>
@@ -67,20 +68,7 @@
           </a>
           <span class="tooltip">Add Student</span>
         </li>
-        <li>
-          <a href="#">
-            <i
-              class="bx bx-message-rounded-dots"
-              onclick="openCity(event, 'student-requests')"
-            ></i>
-            <span
-              class="links-name"
-              onclick="openCity(event, 'student-requests')"
-              >Requests</span
-            >
-          </a>
-          <span class="tooltip">Request</span>
-        </li>
+        
         <li>
           <a href="#">
             <i class="bx bx-send" onclick="openCity(event, 'publish-info')"></i>
@@ -95,7 +83,6 @@
         <div class="profile">
           <div class="profile-details">
             <img src="images/admin.png" alt="" />
-            <!-- <i class='bx bxs-user-check' ></i> -->
             <div class="admin">
               <div class="name">Setjhaba Klass</div>
               <div class="admin-type">Admin</div>
@@ -401,7 +388,37 @@
             </tr>
           </tbody>
         </table>
-        <div></div>
+          <div class="place-controls">
+          <div class="rbtn">
+            <fieldset>
+              <legend>Place ALL students to their residence of choice</legend>
+              <input type="radio" id="rbtnAll" class="rbtn" name="res-rbtn" />
+              <label for="rbtnAll" id="lblAll">All residences</label>
+            </fieldset>
+            <fieldset>
+              <legend>Place specific student to specific residence</legend>
+              <label for="tboxPlaceStudent" id="lblPlaceStudent"
+                >Enter student number:</label
+              >
+              <input type="text" id="tboxPlaceStudent" class="tbox" />
+              <div>
+                <input type="radio" id="rbtnJ" name="res-rbtn" />
+                <label for="rbtnJ" id="lblJ">Jasmyn</label>
+                <input type="radio" id="rbtnH" name="res-rbtn" />
+                <label for="rbtnH" id="lblJ">Horizon</label>
+                <input type="radio" id="rbtnK" name="res-rbtn" />
+                <label for="rbtnK" id="lblJ">Kumba</label>
+                <input type="radio" id="rbtnT" name="res-rbtn" />
+                <label for="rbtnT" id="lblT">Thuthuka</label>
+                <input type="radio" id="rbtnV" name="res-rbtn" />
+                <label for="rbtnV" id="lblV">Vergelegen</label>
+              </div>
+            </fieldset>
+            <div>
+              <button type="button" id="btnSubmit" class="btn">Place</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -565,7 +582,7 @@
             <label for="rbtSingle">Single</label>
           </fieldset>
           <div>
-            <button type="submit" id="btnAdd" class="btn">Add Stundet</button>
+            <button type="submit" id="btnAdd" class="btn">Add Student</button>
           </div>
         </div>
       </div>
@@ -577,7 +594,7 @@
           <label id="lblTxtArea" for="txtAreaInfo"
             >Enter Information to publish:</label>
           <div>
-            <textarea id="txtAreaPublish" rows="15" cols="120"></textarea>
+              <textarea id="txtAreaPublish" rows="15" cols="120" name="S1"></textarea>
             <div>
               <button>Publish</button>
             </div>
@@ -592,43 +609,35 @@
         </div>
       </div>
     </div>
-
-    <!-- <section class="tabcontent">
-      <nav>
-        <div>
-          <span class="dashboard">Dashboard</span>
-        </div>
-      </nav>
-    </section>
-    <section class="home-section">
-      <nav>
-        <div>
-          <span class="place-students">Place Students</span>
-        </div>
-      </nav>
-    </section>
-    <section class="home-section">
-      <nav>
-        <div>
-          <span class="add-student">Add Student</span>
-        </div>
-      </nav>
-    </section>
-    <section class="home-section">
-      <nav>
-        <div>
-          <span class="request">Requests</span>
-        </div>
-      </nav>
-    </section>
-    <section class="home-section">
-      <nav>
-        <div>
-          <span class="publish">Publish Information</span>
-        </div>
-      </nav>
-    </section> -->
-        </div>
+   </div>
     </form>
+    <script>
+      let btn = document.querySelector("#btn");
+      let sidebar = document.querySelector(".sidebar");
+      let searchBtn = document.querySelector(".bx-search-alt-2");
+
+      btn.onclick = function () {
+        sidebar.classList.toggle("active");
+      };
+
+      searchBtn.onclick = function () {
+        sidebar.classList.toggle("active");
+      };
+
+      function open(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      
+    </script>
 </body>
 </html>

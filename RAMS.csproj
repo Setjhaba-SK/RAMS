@@ -67,7 +67,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="admin.aspx" />
     <Content Include="App_Data\images\admin.png" />
     <Content Include="App_Data\Admins.mdf" />
     <Content Include="App_Data\Admins_log.ldf">
@@ -88,61 +87,113 @@
     <Content Include="App_Data\VSS_log.ldf">
       <DependentUpon>VSS.mdf</DependentUpon>
     </Content>
-    <Content Include="CancelRoom.aspx" />
-    <Content Include="Home.aspx" />
-    <Content Include="Login.aspx" />
-    <Content Include="normalize.css" />
+    <Content Include="src\admin.aspx" />
+    <Content Include="src\css\admin.css" />
+    <Content Include="src\css\home.css" />
+    <Content Include="src\css\room-selection.css" />
+    <Content Include="src\images\admin.png" />
+    <Content Include="src\images\bx-user-check.svg" />
+    <Content Include="src\images\cancel.jpg" />
+    <Content Include="src\images\fakurian-design-nY14Fs8pxT8-unsplash.jpg" />
+    <Content Include="src\images\github.png" />
+    <Content Include="src\images\gmail.png" />
+    <Content Include="src\images\Horizon.gif" />
+    <Content Include="src\images\house.jpg" />
+    <Content Include="src\images\house2.jpg" />
+    <Content Include="src\images\Jasmyn.gif" />
+    <Content Include="src\images\k-floor.jpg" />
+    <Content Include="src\images\Kumba.gif" />
+    <Content Include="src\images\message.png" />
+    <Content Include="src\images\noun_User_41514.png" />
+    <Content Include="src\images\Thuthuka.gif" />
+    <Content Include="src\images\user-check-regular-24.png" />
+    <Content Include="src\images\user-check-solid-24.png" />
+    <Content Include="src\images\Vergelegen.gif" />
+    <Content Include="src\js\carousel.js" />
+    <Content Include="src\js\sidebar.js" />
+    <Content Include="src\css\login.css" />
+    <Content Include="src\js\tabs.js" />
+    <Content Include="src\test.aspx" />
+    <Content Include="src\update.aspx" />
+    <Content Include="src\room-selection.aspx" />
+    <Content Include="src\view-cancel.aspx" />
+    <Content Include="src\home.aspx" />
+    <Content Include="src\login.aspx" />
+    <Content Include="src\normalize.css" />
     <Content Include="oldCode.txt" />
-    <Content Include="RoomSelection.aspx" />
+    <Content Include="rams.js" />
     <Content Include="Students.txt" />
-    <Content Include="Web.config" />
+    <Content Include="src\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="admin.aspx.cs">
+    <Compile Include="src\admin.aspx.cs">
       <DependentUpon>admin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin.aspx.designer.cs">
+    <Compile Include="src\admin.aspx.designer.cs">
       <DependentUpon>admin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="CancelRoom.aspx.cs">
-      <DependentUpon>CancelRoom.aspx</DependentUpon>
+    <Compile Include="src\test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CancelRoom.aspx.designer.cs">
-      <DependentUpon>CancelRoom.aspx</DependentUpon>
+    <Compile Include="src\test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="src\update.aspx.cs">
+      <DependentUpon>update.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="src\update.aspx.designer.cs">
+      <DependentUpon>update.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="src\room-selection.aspx.cs">
+      <DependentUpon>room-selection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="src\room-selection.aspx.designer.cs">
+      <DependentUpon>room-selection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="src\view-cancel.aspx.cs">
+      <DependentUpon>view-cancel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="src\view-cancel.aspx.designer.cs">
+      <DependentUpon>view-cancel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="src\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="src\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="src\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="src\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RoomSelection.aspx.cs">
-      <DependentUpon>RoomSelection.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="RoomSelection.aspx.designer.cs">
-      <DependentUpon>RoomSelection.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-    <None Include="Web.Debug.config">
+    <None Include="src\packages.config" />
+    <None Include="src\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <None Include="Web.Release.config">
+    <None Include="src\Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
