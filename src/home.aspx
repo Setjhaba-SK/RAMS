@@ -12,7 +12,7 @@
     <title></title>
 </head>
 <body>
-    <form id="formHome" runat="server">
+    <form id="formHome" runat="server" draggable="false">
         <div>
             <div class="container-home">
       <div class="header">
@@ -77,11 +77,10 @@
       </div> -->
       <div class="box box-one">
         <div>
-          <img src="images/house.jpg" alt="" class="content-image-one"/>
-        </div>
+          &nbsp;<img src="images/house.jpg" alt="" class="content-image-one"/></div>
         <div>
           <p></p>
-          <a href="https://efundi.nwu.ac.za/portal/">Room Selection</a>
+          <a href="room-selection.aspx">Room Selection</a>
         </div>
       </div>
       <div class="box box-two">
@@ -90,7 +89,7 @@
         </div>
         <div>
           <p></p>
-          <a href="https://www.nwu.ac.za/">View/Cancel Placement</a>
+          <a href="view-cancel.aspx">View/Cancel Placement</a>
         </div>
       </div>
       <div class="updates">

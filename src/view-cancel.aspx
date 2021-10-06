@@ -7,7 +7,7 @@
     <title></title>
 </head>
 <body>
-    <form id="form1View" runat="server">
+    <form id="form1View" runat="server" draggable="false">
         <div>
         </div>
     </form>

@@ -14,7 +14,7 @@
     <title>Admin Panel</title>
 </head>
 <body>
-    <form id="formAdmin" runat="server">
+    <form id="formAdmin" runat="server" draggable="false">
         <div>
             <div class="sidebar">
       <div class="logo-content">
@@ -22,6 +22,7 @@
           <div class="logo-name">R.A.M.S</div>
         </div>
         <i class="bx bx-menu" id="btn"></i>
+
       </div>
       <ul class="nav-list">
         <li>
@@ -401,7 +402,37 @@
             </tr>
           </tbody>
         </table>
-        <div></div>
+          <div class="place-controls">
+          <div class="rbtn">
+            <fieldset>
+              <legend>Place ALL students to their residence of choice</legend>
+              <input type="radio" id="rbtnAll" class="rbtn" name="res-rbtn" />
+              <label for="rbtnAll" id="lblAll">All residences</label>
+            </fieldset>
+            <fieldset>
+              <legend>Place specific student to specific residence</legend>
+              <label for="tboxPlaceStudent" id="lblPlaceStudent"
+                >Enter student number:</label
+              >
+              <input type="text" id="tboxPlaceStudent" class="tbox" />
+              <div>
+                <input type="radio" id="rbtnJ" name="res-rbtn" />
+                <label for="rbtnJ" id="lblJ">Jasmyn</label>
+                <input type="radio" id="rbtnH" name="res-rbtn" />
+                <label for="rbtnH" id="lblJ">Horizon</label>
+                <input type="radio" id="rbtnK" name="res-rbtn" />
+                <label for="rbtnK" id="lblJ">Kumba</label>
+                <input type="radio" id="rbtnT" name="res-rbtn" />
+                <label for="rbtnT" id="lblT">Thuthuka</label>
+                <input type="radio" id="rbtnV" name="res-rbtn" />
+                <label for="rbtnV" id="lblV">Vergelegen</label>
+              </div>
+            </fieldset>
+            <div>
+              <button type="button" id="btnSubmit" class="btn">Place</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
