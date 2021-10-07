@@ -29,34 +29,24 @@
               class="user-icon"
             />
           </box-icon>
-          <!-- <p style="color: lightgray;"> fsssf</p>
-          </div>
-          <div>
-            <p style="color: lightgray;"> fsssf</p>
-          </div>
-          <div>
-            <p style="color: lightgray;"> fsssf</p> -->
+
         </div>
 
         <div>
-          <label
-            id="lblUsername"
-            class="username"
-            type="text"
-            style="margin-top: 10px"
-            >Username:<br
-          /></label>
-        </div>
-        <div><input id="tboxUsername" class="textbox-username" /><br /></div>
-        <div>
-          <label id="lblPassword" class="password">Password:<br /></label>
+            <asp:Label ID="lblUsername" runat="server" Text="Username:" class="username" style="margin-top: 10px"></asp:Label>
         </div>
         <div>
-          <input type="text" id="tboxPasword" class="textbox-password" /></div>
-        <div>
-          <button type="button" id="btnLogin" class="button-login">Login</button>
+            <asp:TextBox ID="tboxUsername" runat="server" class="textbox-username"></asp:TextBox>
         </div>
-        <div id="cboxRemember"><input type="checkbox" class="rember-me" />Remember me</div>
+        <div>
+            <asp:Label ID="lblPassword" runat="server" Text="Password:" class="password"></asp:Label>
+        </div>
+        <div>
+            <asp:TextBox ID="tboxPasword" runat="server" class="textbox-password"></asp:TextBox>
+        <div>
+          <asp:Button ID="btnLogin" runat="server" Text="Button" class="button-login" />
+        </div>
+          <asp:CheckBox ID="cboxRemember" runat="server" Text="Remember me" class="rember-me"/>
       </div>
     </div>
         </div>

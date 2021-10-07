@@ -17,7 +17,6 @@
       <div class="header">
         <div>
           <!-- <button type="button">Back</button> -->
-
           <h1>Room Selection</h1>
           <div></div>
         </div>
@@ -25,8 +24,8 @@
       <div class="content">
         <div class="box box-one">
           <!-- <div class="circle"></div> -->
-          <p>You are placed at</p>
-          <label id="lblResName"></label>
+          <asp:Label ID="lblPlacedAt" runat="server" Text="You are placed at"></asp:Label>
+            <asp:Label ID="lblResName" runat="server" Text="Label"></asp:Label>
         </div>
         <div>
           <h2>Check the floor plan below before choosing a room:</h2>
@@ -35,39 +34,14 @@
           <img src="images/k-floor.jpg" class="floor-img" />
         </div>
         <div>
-          <h2 class="h2-block">Choose a preferred block:</h2>
-          <select>
-            <optgroup label="A-E">
-              <option value="1">A</option>
-              <option value="2">B</option>
-              <option value="3">C</option>
-              <option value="4">AB</option>
-              <option value="5">AC</option>
-              <option value="6">D</option>
-              <option value="7">E</option>
-            </optgroup>
-            <optgroup label="F-J">
-              <option value="8">F</option>
-              <option value="9">G</option>
-              <option value="10">H</option>
-              <option value="11">I</option>
-              <option value="12">J</option>
-            </optgroup>
-            <optgroup label="K-R">
-              <option value="13">K</option>
-              <option value="14">L</option>
-              <option value="15">M</option>
-              <option value="16">Q</option>
-              <option value="17">R</option>
-            </optgroup>
-            <optgroup label="S-V">
-              <option value="18">S</option>
-              <option value="19">T</option>
-              <option value="20">U</option>
-              <option value="21">V</option>
-              <option value="22">U</option>
-            </optgroup>
-          </select>
+            <div>
+                <h2 class="h2-block">Female Blocks:</h2>
+            <asp:DropDownList ID="dropDListBlockF" runat="server" AutoPostBack="True"></asp:DropDownList>
+            </div>
+            <div>
+                <h2 class="h2-block">Male Blocks:</h2>
+            <asp:DropDownList ID="dropDListM" runat="server" AutoPostBack="True"></asp:DropDownList>
+            </div>
         </div>
         <div>
           <h2 class="rooms">Rooms available:</h2>
@@ -79,48 +53,34 @@
           <h2>Ground floor:</h2>
           <div class="single-rooms">
             <h3>Singles:</h3>
-            <input type="radio" id="rbtnG02" name="rooms" />
-            <label for="rbtnG02" class="rbtn">G02</label>
-            <input type="radio" id="rbtnG04" name="rooms" />
-            <label for="rbtnG04" class="rbtn">G04</label>
-            <input type="radio" id="rbtnG05" name="rooms" />
-            <label for="rbtnG05" class="rbtn">G05</label>
+            <asp:RadioButton ID="rbtnG02" runat="server" Text="G02" GroupName="rooms" />
+              <asp:RadioButton ID="rbtnG04" runat="server" Text="G04" GroupName="rooms" />
+              <asp:RadioButton ID="rbtnG05" runat="server" Text="G05" GroupName="rooms" />
           </div>
           <div class="sharing-rooms">
             <h3>Sharing:</h3>
-            <input type="radio" id="rbtnG06" name="rooms" />
-            <label for="rbtnG06" class="rbtn">G06</label>
-            <input type="radio" id="rbtnG07" name="rooms" />
-            <label for="rbtnG07" class="rbtn">G07</label>
-            <input type="radio" id="rbtnG08" name="rooms" />
-            <label for="rbtnG08" class="rbtn">G08</label>
+              <asp:RadioButton ID="rbtnG06" runat="server" Text="G06" GroupName="rooms" />
+              <asp:RadioButton ID="rbtnG07" runat="server" Text="G07" GroupName="rooms" />
+              <asp:RadioButton ID="rbtnG08" runat="server" Text="G08" GroupName="rooms" />
           </div>
         </div>
         <div class="floor first-floor">
           <h2>First floor:</h2>
           <div class="single-rooms">
             <h3>Singles:</h3>
-            <input type="radio" id="rbtn102" name="rooms" />
-            <label for="rbtn102" class="rbtn">102</label>
-            <input type="radio" id="rbtn104" name="rooms" />
-            <label for="rbtn104" class="rbtn">104</label>
-            <input type="radio" id="rbtn105" name="rooms" />
-            <label for="rbtn105" class="rbtn">105</label>
+              <asp:RadioButton ID="rbtn102" runat="server" Text="102" GroupName="rooms" />
+              <asp:RadioButton ID="rbtn104" runat="server" Text="104" GroupName="rooms" />
+              <asp:RadioButton ID="rbtn105" runat="server" Text="105" GroupName="rooms" />
           </div>
           <div class="sharing-rooms">
             <h3>Sharing:</h3>
-            <input type="radio" id="rbtn106" name="rooms" />
-            <label for="rbtn106" class="rbtn">106</label>
-            <input type="radio" id="rbtn107" name="rooms" />
-            <label for="rbtn107" class="rbtn">107</label>
-            <input type="radio" id="rbtn108" name="rooms" />
-            <label for="rbtn108" class="rbtn">108</label>
+              <asp:RadioButton ID="rbtn106" runat="server" Text="106" GroupName="rooms" />
+              <asp:RadioButton ID="rbtn107" runat="server" Text="107" GroupName="rooms" />
+              <asp:RadioButton ID="rbtn108" runat="server" Text="108" GroupName="rooms" />
           </div>
         </div>
         <div>
-          <button  id="btnChooseRoom" runat="server" class="btn-choose">
-            Choose room
-          </button>
+            <asp:Button ID="btnChoose" runat="server" Text="Button" class="btn-choose" />
         </div>
       </div>
       <!-- <div class="footer"></div> -->

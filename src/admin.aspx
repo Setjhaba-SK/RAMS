@@ -100,13 +100,7 @@
       </div>
       <div>
         <label> Select residence: </label>
-        <select>
-          <option value="1">Jasmyn</option>
-          <option value="2">Horizon</option>
-          <option value="3">Kumbah</option>
-          <option value="4">Thuthuka</option>
-          <option value="5">Vergelegen</option>
-        </select>
+          <asp:DropDownList ID="dropDListRes" runat="server" AutoPostBack="True"></asp:DropDownList>
       </div>
       <div>
         <label for="residence-table">Students Placed At ...</label>
@@ -191,17 +185,15 @@
             </tr>
           </tbody>
         </table>
-        <label id="	lblStudentPlaced" for="tboxStudentPlaced">Enter student number:</label>
-        <input type="text" id="tboxStudentPlaced" class="tbox" />
-        <button type="submit" id="btnDelete" class="btn btnDelete">
-          Remove
-        </button>
-        <button type="submit" id="btnUpdate" class="btn btnUpdate">
-          Update
-        </button>
+          <asp:Label ID="lblStudentPlaced" for="tboxStudentPlaced" runat="server" Text="Enter student number:"></asp:Label>
+            <asp:TextBox ID="tboxStudentPlaced" runat="server" class="tbox"></asp:TextBox>
+          <asp:Button ID="btnRemove" runat="server" Text="Remove" class="btn btnRemove"/>
+          <asp:Button ID="btnUpdate" runat="server" Text="Update" class="btn btnUpdate"/>
       </div>
       <div>
-        <label for="waitinglist-table">Students In Waiting List</label>
+          <div>
+              <p>Students In Waiting List</p>
+          </div>
         <table class="residence-table">
           <thead>
             <tr>
@@ -390,32 +382,22 @@
         </table>
           <div class="place-controls">
           <div class="rbtn">
-            <fieldset>
-              <legend>Place ALL students to their residence of choice</legend>
-              <input type="radio" id="rbtnAll" class="rbtn" name="res-rbtn" />
-              <label for="rbtnAll" id="lblAll">All residences</label>
-            </fieldset>
-            <fieldset>
-              <legend>Place specific student to specific residence</legend>
-              <label for="tboxPlaceStudent" id="lblPlaceStudent"
-                >Enter student number:</label
-              >
-              <input type="text" id="tboxPlaceStudent" class="tbox" />
               <div>
-                <input type="radio" id="rbtnJ" name="res-rbtn" />
-                <label for="rbtnJ" id="lblJ">Jasmyn</label>
-                <input type="radio" id="rbtnH" name="res-rbtn" />
-                <label for="rbtnH" id="lblJ">Horizon</label>
-                <input type="radio" id="rbtnK" name="res-rbtn" />
-                <label for="rbtnK" id="lblJ">Kumba</label>
-                <input type="radio" id="rbtnT" name="res-rbtn" />
-                <label for="rbtnT" id="lblT">Thuthuka</label>
-                <input type="radio" id="rbtnV" name="res-rbtn" />
-                <label for="rbtnV" id="lblV">Vergelegen</label>
+                  <p>Place ALL students to their residence of choice</p>
+                  <asp:RadioButton ID="rbtnAll" runat="server" Text="All Residences" />
               </div>
-            </fieldset>
+              <div>
+                  <p>Place specific student to specific residence</p>
+                  <div>
+                      <asp:RadioButton ID="rbtnH" runat="server" Text="Horizon" class="rbtn"/>
+                      <asp:RadioButton ID="rbtnJ" runat="server" Text="Jasmyn" class="rbtn"/>
+                      <asp:RadioButton ID="rbtnK" runat="server" Text="Kumba" class="rbtn"/>
+                      <asp:RadioButton ID="rbtnT" runat="server" Text="Thuthuka" class="rbtn"/>
+                      <asp:RadioButton ID="rbtnV" runat="server" Text="Vergelegen" class="rbtn"/>
+                  </div>
+              </div>
             <div>
-              <button type="button" id="btnSubmit" class="btn">Place</button>
+                <asp:Button ID="btnSubmit" runat="server" Text="Place" class="btn"/>
             </div>
           </div>
         </div>
@@ -427,14 +409,11 @@
       <div>
         <h2>Available Rooms in Residences</h2>
         <div>
-          <label>Residence</label>
-          <select>
-            <option value="1">Jasmyn</option>
-            <option value="2">Horizon</option>
-            <option value="3">Kumbah</option>
-            <option value="4">Thuthuka</option>
-            <option value="5">Vergelegen</option>
-          </select>
+          <p>Residence</p>
+            <div>
+                <asp:DropDownList ID="dropDlistRes2" runat="server" AutoPostBack="True"></asp:DropDownList>
+            </div>
+
           <div>
             <table class="residence-table">
               <thead>
@@ -549,40 +528,29 @@
           </div>
         </div>
         <div>
-          <fieldset>
-            <legend>Student Information</legend>
-            <label id="lblAdd" for="tboxAdd">Student Number</label>
-            <input type="text" id="tboxAdd" />
-          </fieldset>
-          <fieldset>
-            <legend>Residence</legend>
-            <label id="lblCurrRes" for="tboxCurrRes"
-              >Current Year Residence</label
-            >
-            <select>
-              <option value="1">Jasmyn</option>
-              <option value="2">Horizon</option>
-              <option value="3">Kumbah</option>
-              <option value="4">Thuthuka</option>
-              <option value="5">Vergelegen</option>
-            </select>
-            <!-- <input type="text" id="tboxCurrRes"> -->
-            <label id="lblNextRes" for="tboxNextRes">Next Year Residence</label>
-            <select>
-              <option value="1">Jasmyn</option>
-              <option value="2">Horizon</option>
-              <option value="3">Kumbah</option>
-              <option value="4">Thuthuka</option>
-              <option value="5">Vergelegen</option>
-            </select>
-            <!-- <input type="text" id="tboxNextRes"> -->
-            <input type="radio" name="singleOrSharing" id="rbtSharing" />
-            <label for="rbtSharing">Sharing</label>
-            <input type="radio" name="singleOrSharing" id="rbtSingle" />
-            <label for="rbtSingle">Single</label>
-          </fieldset>
+            <h3>Student Information</h3>
+            <asp:Label ID="lblAdd" for="tboxAdd" runat="server" Text="Student Number"></asp:Label>
+            <br />
+            <asp:TextBox ID="tboxAdd" runat="server" class="tbox"></asp:TextBox>
+            <br />
+            <div>
+                <p>Residence</p>
+                <div>
+                    <asp:Label ID="lblCurrRes" for="dropDList3" runat="server" Text="Current Residences"></asp:Label>
+                <asp:DropDownList ID="dropDList3" runat="server" AutoPostBack="True"></asp:DropDownList>
+                </div>
+                <div>
+                    <asp:Label ID="lblNextRes" for="dropDList4" runat="server" Text="Next Year Residence"></asp:Label>
+                    <asp:DropDownList ID="dropDList4" runat="server" AutoPostBack="True"></asp:DropDownList>
+                     <br />
+                </div>
+                <div>
+                    <asp:RadioButton ID="rbtnSharing" runat="server" Text="Sharing" class="rbtn"/>
+                    <asp:RadioButton ID="rbtSingle" runat="server" Text="Single" class="rbtn"/>
+                </div>
+            </div>
           <div>
-            <button type="submit" id="btnAdd" class="btn">Add Student</button>
+              <asp:Button ID="btnAdd2" runat="server" Text="Add" class="btn"/>
           </div>
         </div>
       </div>
@@ -591,12 +559,12 @@
       <div class="publish">
         <h1>Publish Info</h1>
         <div>
-          <label id="lblTxtArea" for="txtAreaInfo"
-            >Enter Information to publish:</label>
+            <asp:Label ID="lblTxtArea" for="txtAreaInfo" runat="server" Text="Enter Information to publish:"></asp:Label>
+            <br />
           <div>
               <textarea id="txtAreaPublish" rows="15" cols="120" name="S1"></textarea>
             <div>
-              <button>Publish</button>
+              <asp:Button ID="btnPublish" runat="server" Text="Publish" class="btn"/>
             </div>
           </div>
         </div>
@@ -604,7 +572,7 @@
       <div class="students-requests">
         <h1>Requests</h1>
         <div>
-          <label>Students that Requested to cancel their room / placement</label>
+          <p>Students that Requested to cancel their room / placement</p>
           <div class="request-box"></div>
         </div>
       </div>
