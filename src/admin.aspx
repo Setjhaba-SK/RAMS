@@ -100,7 +100,13 @@
       </div>
       <div>
         <label> Select residence: </label>
-          <asp:DropDownList ID="dropDListRes" runat="server" AutoPostBack="True"></asp:DropDownList>
+          <asp:DropDownList ID="dropDListRes" runat="server" AutoPostBack="True">
+              <asp:ListItem>Horizon</asp:ListItem>
+              <asp:ListItem>Jasmyn</asp:ListItem>
+              <asp:ListItem>Kumba</asp:ListItem>
+              <asp:ListItem>Thuthuka</asp:ListItem>
+              <asp:ListItem>Vergelegen</asp:ListItem>
+          </asp:DropDownList>
       </div>
       <div>
         <label for="residence-table">Students Placed At ...</label>
@@ -160,7 +166,13 @@
         <div>
           <p>Residence</p>
             <div>
-                <asp:DropDownList ID="dropDlistRes2" runat="server" AutoPostBack="True"></asp:DropDownList>
+                <asp:DropDownList ID="dropDlistRes2" runat="server" AutoPostBack="True">
+                    <asp:ListItem>Horizon</asp:ListItem>
+                    <asp:ListItem>Jasmyn</asp:ListItem>
+                    <asp:ListItem>Kumba</asp:ListItem>
+                    <asp:ListItem>Thuthuka</asp:ListItem>
+                    <asp:ListItem>Vergelegen</asp:ListItem>
+                </asp:DropDownList>
             </div>
 
           <div>

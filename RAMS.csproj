@@ -125,6 +125,10 @@
     <Compile Include="src\admin.aspx.designer.cs">
       <DependentUpon>admin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="src\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="src\test.aspx.cs">
       <DependentUpon>test.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
