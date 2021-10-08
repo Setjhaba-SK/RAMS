@@ -23,6 +23,9 @@
             </asp:DropDownList>
             <br />
             <asp:RadioButton ID="rbtnG02" runat="server" Text="G02" />
+            <br />
+            <asp:GridView ID="GridView1" runat="server">
+            </asp:GridView>
         </div>
     </form>
 </body>

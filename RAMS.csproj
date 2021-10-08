@@ -67,11 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\images\admin.png" />
     <Content Include="App_Data\Admins.mdf" />
-    <Content Include="App_Data\Admins_log.ldf">
-      <DependentUpon>Admins.mdf</DependentUpon>
-    </Content>
+    <Content Include="App_Data\Admins_log.ldf" />
+    <Content Include="App_Data\images\admin.png" />
     <Content Include="App_Data\images\admin2.jpg" />
     <Content Include="App_Data\images\green.png" />
     <Content Include="App_Data\images\Horizon.gif" />
@@ -80,13 +78,9 @@
     <Content Include="App_Data\images\Thuthuka.gif" />
     <Content Include="App_Data\images\Vergelegen.gif" />
     <Content Include="App_Data\Students.mdf" />
-    <Content Include="App_Data\Students_log.ldf">
-      <DependentUpon>Students.mdf</DependentUpon>
-    </Content>
+    <Content Include="App_Data\Students_log.ldf" />
     <Content Include="App_Data\VSS.mdf" />
-    <Content Include="App_Data\VSS_log.ldf">
-      <DependentUpon>VSS.mdf</DependentUpon>
-    </Content>
+    <Content Include="App_Data\VSS_log.ldf" />
     <Content Include="src\admin.aspx" />
     <Content Include="src\css\admin.css" />
     <Content Include="src\css\home.css" />

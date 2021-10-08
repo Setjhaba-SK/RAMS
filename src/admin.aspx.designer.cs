@@ -33,22 +33,31 @@ namespace RAMS
         protected global::System.Web.UI.WebControls.DropDownList dropDListRes;
 
         /// <summary>
-        /// lblStudentPlaced control.
+        /// gridViewStudentsPlaced control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblStudentPlaced;
+        protected global::System.Web.UI.WebControls.GridView gridViewStudentsPlaced;
 
         /// <summary>
-        /// tboxStudentPlaced control.
+        /// lblPlaced control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tboxStudentPlaced;
+        protected global::System.Web.UI.WebControls.Label lblPlaced;
+
+        /// <summary>
+        /// tboxStudentNo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tboxStudentNo;
 
         /// <summary>
         /// btnRemove control.
@@ -67,6 +76,51 @@ namespace RAMS
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnUpdate;
+
+        /// <summary>
+        /// gridViewWaitingList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gridViewWaitingList;
+
+        /// <summary>
+        /// lblWList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblWList;
+
+        /// <summary>
+        /// tboxRemoveWaitlist control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tboxRemoveWaitlist;
+
+        /// <summary>
+        /// btnRemoveWaitlist control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnRemoveWaitlist;
+
+        /// <summary>
+        /// gridViewPlace control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gridViewPlace;
 
         /// <summary>
         /// rbtnAll control.
@@ -139,6 +193,15 @@ namespace RAMS
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList dropDlistRes2;
+
+        /// <summary>
+        /// gridViewAddStudent control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gridViewAddStudent;
 
         /// <summary>
         /// lblAdd control.
