@@ -111,7 +111,7 @@
     <Content Include="src\view-cancel.aspx" />
     <Content Include="src\home.aspx" />
     <Content Include="src\login.aspx" />
-    <Content Include="src\normalize.css" />
+    <Content Include="normalize.css" />
     <Content Include="oldCode.txt" />
     <Content Include="rams.js" />
     <Content Include="Students.txt" />
@@ -166,7 +166,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\packages.config" />
+    <None Include="packages.config" />
     <None Include="src\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
