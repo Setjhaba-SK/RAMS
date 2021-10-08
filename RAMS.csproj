@@ -67,8 +67,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Admins.mdf" />
-    <Content Include="App_Data\Admins_log.ldf" />
     <Content Include="App_Data\images\admin.png" />
     <Content Include="App_Data\images\admin2.jpg" />
     <Content Include="App_Data\images\green.png" />
@@ -77,8 +75,8 @@
     <Content Include="App_Data\images\Kumba.gif" />
     <Content Include="App_Data\images\Thuthuka.gif" />
     <Content Include="App_Data\images\Vergelegen.gif" />
-    <Content Include="App_Data\Students.mdf" />
-    <Content Include="App_Data\Students_log.ldf" />
+    <Content Include="App_Data\System_DB.mdf" />
+    <Content Include="App_Data\System_DB_log.ldf" />
     <Content Include="App_Data\VSS.mdf" />
     <Content Include="App_Data\VSS_log.ldf" />
     <Content Include="src\admin.aspx" />
@@ -161,10 +159,6 @@
     </Compile>
     <Compile Include="src\home.aspx.designer.cs">
       <DependentUpon>home.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="src\login.aspx.cs">
-      <DependentUpon>login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="src\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>

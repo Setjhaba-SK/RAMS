@@ -44,7 +44,8 @@
         <div>
             <asp:TextBox ID="tboxPasword" runat="server" class="textbox-password"></asp:TextBox>
         <div>
-          <asp:Button ID="btnLogin" runat="server" Text="Button" class="button-login" />
+          <asp:Button ID="btnLogin" runat="server" Text="Button" class="button-login" OnClick="btnLogin_Click" />
+            <asp:Label ID="lblError" runat="server" Text="Label"></asp:Label>
         </div>
           <asp:CheckBox ID="cboxRemember" runat="server" Text="Remember me" class="rember-me"/>
       </div>
