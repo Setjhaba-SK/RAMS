@@ -12,7 +12,7 @@
     <title></title>
 </head>
 <body>
-    <form id="formHome" runat="server" draggable="false">
+    <form id="formHome" runat="server" draggable="true">
         <div>
             <div class="container-home">
       <div class="header">
@@ -68,7 +68,7 @@
           &nbsp;<img src="images/house.jpg" alt="" class="content-image-one"/></div>
         <div>
           <p></p>
-            <asp:LinkButton ID="lbtnRoomSelect" runat="server">Room Selection</asp:LinkButton>
+            <asp:LinkButton ID="lbtnRoomSelect" runat="server" OnClick="lbtnRoomSelect_Click">Room Selection</asp:LinkButton>
         </div>
       </div>
       <div class="box box-two">
@@ -77,7 +77,7 @@
         </div>
         <div>
           <p></p>
-          <asp:LinkButton ID="lbtnViewCancel" runat="server">View Or Cancel</asp:LinkButton>
+          <asp:LinkButton ID="lbtnViewCancel" runat="server" OnClick="lbtnViewCancel_Click">View Or Cancel</asp:LinkButton>
         </div>
       </div>
       <div class="updates">

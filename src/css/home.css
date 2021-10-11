@@ -237,9 +237,9 @@ body {
   }
 
   .residence-image {
-    height: 75fr;
-    width: 80fr;
-    max-width: 27rem;
+    height: 80%;
+    width: 90%;
+    //max-width: 27rem;
     background-color: lightgray;
     border-radius: 7px;
   }

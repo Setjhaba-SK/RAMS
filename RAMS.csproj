@@ -82,7 +82,10 @@
     <Content Include="src\admin.aspx" />
     <Content Include="src\css\admin.css" />
     <Content Include="src\css\home.css" />
+    <Content Include="src\Jysmyn_Verries Room Selection.aspx" />
+    <Content Include="src\Kumba Room Selections.aspx" />
     <Content Include="src\css\room-selection.css" />
+    <Content Include="src\Thuthuka Room Selection.aspx" />
     <Content Include="src\images\admin.png" />
     <Content Include="src\images\bx-user-check.svg" />
     <Content Include="src\images\cancel.jpg" />
@@ -106,7 +109,6 @@
     <Content Include="src\css\login.css" />
     <Content Include="src\js\tabs.js" />
     <Content Include="src\test.aspx" />
-    <Content Include="src\update.aspx" />
     <Content Include="src\room-selection.aspx" />
     <Content Include="src\view-cancel.aspx" />
     <Content Include="src\home.aspx" />
@@ -125,6 +127,27 @@
     <Compile Include="src\admin.aspx.designer.cs">
       <DependentUpon>admin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="src\Jysmyn_Verries Room Selection.aspx.cs">
+      <DependentUpon>Jysmyn_Verries Room Selection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="src\Jysmyn_Verries Room Selection.aspx.designer.cs">
+      <DependentUpon>Jysmyn_Verries Room Selection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="src\Kumba Room Selections.aspx.cs">
+      <DependentUpon>Kumba Room Selections.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="src\Kumba Room Selections.aspx.designer.cs">
+      <DependentUpon>Kumba Room Selections.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="src\Thuthuka Room Selection.aspx.cs">
+      <DependentUpon>Thuthuka Room Selection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="src\Thuthuka Room Selection.aspx.designer.cs">
+      <DependentUpon>Thuthuka Room Selection.aspx</DependentUpon>
+    </Compile>
     <Compile Include="src\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -135,13 +158,6 @@
     </Compile>
     <Compile Include="src\test.aspx.designer.cs">
       <DependentUpon>test.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="src\update.aspx.cs">
-      <DependentUpon>update.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="src\update.aspx.designer.cs">
-      <DependentUpon>update.aspx</DependentUpon>
     </Compile>
     <Compile Include="src\room-selection.aspx.cs">
       <DependentUpon>room-selection.aspx</DependentUpon>

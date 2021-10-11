@@ -301,8 +301,8 @@ body {
   /* margin-left: 58px; */
 }
 
-.sidebar.active ~ .home-content {
-  left: 200px;
+.sidebar.active ~ .tabcontent {
+  right: 200px;
   width: calc(100% - 200px);
 }
 
@@ -311,13 +311,14 @@ body {
 }
 
 .tabcontent {
-  font-size: large;
+  font-size: medium;
   float: left;
-  padding: 0px 310px;
-  /* border: 1px solid #ccc; */
-  width: 70%;
+  margin-left: 83px;
+  border: 1px solid #ccc; 
+  width: 100vw;
+  height: 100vh;
   border-left: none;
-  height: 300px;
+  overflow: scroll;
 }
 
 .residence-table {

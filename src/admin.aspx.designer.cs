@@ -105,6 +105,24 @@ namespace RAMS
         protected global::System.Web.UI.WebControls.TextBox tboxRemoveWaitlist;
 
         /// <summary>
+        /// lblMoveTo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMoveTo;
+
+        /// <summary>
+        /// dropDListRemove control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList dropDListRemove;
+
+        /// <summary>
         /// btnRemoveWaitlist control.
         /// </summary>
         /// <remarks>
@@ -123,76 +141,49 @@ namespace RAMS
         protected global::System.Web.UI.WebControls.GridView gridViewPlace;
 
         /// <summary>
-        /// rbtnAll control.
+        /// btnJasmyn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rbtnAll;
+        protected global::System.Web.UI.WebControls.Button btnJasmyn;
 
         /// <summary>
-        /// rbtnH control.
+        /// btnKumba control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rbtnH;
+        protected global::System.Web.UI.WebControls.Button btnKumba;
 
         /// <summary>
-        /// rbtnJ control.
+        /// btnThuthuka control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rbtnJ;
+        protected global::System.Web.UI.WebControls.Button btnThuthuka;
 
         /// <summary>
-        /// rbtnK control.
+        /// btnVergelegen control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rbtnK;
+        protected global::System.Web.UI.WebControls.Button btnVergelegen;
 
         /// <summary>
-        /// rbtnT control.
+        /// Residences control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rbtnT;
-
-        /// <summary>
-        /// rbtnV control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rbtnV;
-
-        /// <summary>
-        /// btnSubmit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSubmit;
-
-        /// <summary>
-        /// dropDlistRes2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dropDlistRes2;
+        protected global::System.Web.UI.WebControls.SqlDataSource Residences;
 
         /// <summary>
         /// gridViewAddStudent control.
@@ -222,24 +213,6 @@ namespace RAMS
         protected global::System.Web.UI.WebControls.TextBox tboxAdd;
 
         /// <summary>
-        /// lblCurrRes control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCurrRes;
-
-        /// <summary>
-        /// dropDList3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dropDList3;
-
-        /// <summary>
         /// lblNextRes control.
         /// </summary>
         /// <remarks>
@@ -249,31 +222,13 @@ namespace RAMS
         protected global::System.Web.UI.WebControls.Label lblNextRes;
 
         /// <summary>
-        /// dropDList4 control.
+        /// dropDListNext control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dropDList4;
-
-        /// <summary>
-        /// rbtnSharing control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rbtnSharing;
-
-        /// <summary>
-        /// rbtSingle control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rbtSingle;
+        protected global::System.Web.UI.WebControls.DropDownList dropDListNext;
 
         /// <summary>
         /// btnAdd2 control.
@@ -285,21 +240,66 @@ namespace RAMS
         protected global::System.Web.UI.WebControls.Button btnAdd2;
 
         /// <summary>
-        /// lblTxtArea control.
+        /// lblDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTxtArea;
+        protected global::System.Web.UI.WebControls.Label lblDescription;
 
         /// <summary>
-        /// btnPublish control.
+        /// residenceRoomsGridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnPublish;
+        protected global::System.Web.UI.WebControls.GridView residenceRoomsGridView;
+
+        /// <summary>
+        /// lblBlock control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblBlock;
+
+        /// <summary>
+        /// dropDblock control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList dropDblock;
+
+        /// <summary>
+        /// lblRoom control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblRoom;
+
+        /// <summary>
+        /// dropDroom control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList dropDroom;
+
+        /// <summary>
+        /// btnUpadte2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnUpadte2;
     }
 }
