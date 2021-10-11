@@ -36,11 +36,37 @@
         <div>
             <div>
                 <h2 class="h2-block">Female Blocks:</h2>
-            <asp:DropDownList ID="dropDListBlockF" runat="server" AutoPostBack="True"></asp:DropDownList>
+            <asp:DropDownList ID="dropDListBlockF" runat="server" AutoPostBack="True">
+                <asp:ListItem>A</asp:ListItem>
+                <asp:ListItem>B</asp:ListItem>
+                <asp:ListItem>AB</asp:ListItem>
+                <asp:ListItem>AC</asp:ListItem>
+                <asp:ListItem>E</asp:ListItem>
+                <asp:ListItem>F</asp:ListItem>
+                <asp:ListItem>J</asp:ListItem>
+                <asp:ListItem>K</asp:ListItem>
+                <asp:ListItem>N</asp:ListItem>
+                <asp:ListItem>P</asp:ListItem>
+                <asp:ListItem>S</asp:ListItem>
+                <asp:ListItem>T</asp:ListItem>
+                <asp:ListItem>W</asp:ListItem>
+                <asp:ListItem>X</asp:ListItem>
+                </asp:DropDownList>
             </div>
             <div>
                 <h2 class="h2-block">Male Blocks:</h2>
-            <asp:DropDownList ID="dropDListM" runat="server" AutoPostBack="True"></asp:DropDownList>
+            <asp:DropDownList ID="dropDListM" runat="server" AutoPostBack="True">
+                <asp:ListItem>C</asp:ListItem>
+                <asp:ListItem>D</asp:ListItem>
+                <asp:ListItem>G</asp:ListItem>
+                <asp:ListItem>H</asp:ListItem>
+                <asp:ListItem>L</asp:ListItem>
+                <asp:ListItem>M</asp:ListItem>
+                <asp:ListItem>Q</asp:ListItem>
+                <asp:ListItem>R</asp:ListItem>
+                <asp:ListItem>U</asp:ListItem>
+                <asp:ListItem>V</asp:ListItem>
+                </asp:DropDownList>
             </div>
         </div>
         <div>

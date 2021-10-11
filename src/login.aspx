@@ -9,6 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/login.css" />
     <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            color: #FF0000;
+        }
+    </style>
 </head>
 <body>
     <form id="formLogin" runat="server">
@@ -34,23 +39,26 @@
 
         <div>
             <asp:Label ID="lblUsername" runat="server" Text="Username:" class="username" style="margin-top: 10px"></asp:Label>
+            <asp:RequiredFieldValidator ID="rValidatorUsername" runat="server" ControlToValidate="tboxUsername" CssClass="auto-style1" ErrorMessage="RequiredFieldValidator">Required!</asp:RequiredFieldValidator>
         </div>
         <div>
             <asp:TextBox ID="tboxUsername" runat="server" class="textbox-username"></asp:TextBox>
         </div>
         <div>
             <asp:Label ID="lblPassword" runat="server" Text="Password:" class="password"></asp:Label>
+            <asp:RequiredFieldValidator ID="rValidatorPassword" runat="server" ControlToValidate="tboxPasword" CssClass="auto-style1" ErrorMessage="RequiredFieldValidator">Required!</asp:RequiredFieldValidator>
         </div>
         <div>
-            <asp:TextBox ID="tboxPasword" runat="server" class="textbox-password"></asp:TextBox>
+            <asp:TextBox ID="tboxPasword" runat="server" class="textbox-password" TextMode="Password"></asp:TextBox>
         <div>
           <asp:Button ID="btnLogin" runat="server" Text="Button" class="button-login" OnClick="btnLogin_Click" />
-            <asp:Label ID="lblError" runat="server" Text="Label"></asp:Label>
         </div>
           <asp:CheckBox ID="cboxRemember" runat="server" Text="Remember me" class="rember-me"/>
+            <asp:Label ID="lblError" runat="server" Text="Label"></asp:Label>
       </div>
     </div>
         </div>
+            </div>
     </form>
 </body>
 </html>
